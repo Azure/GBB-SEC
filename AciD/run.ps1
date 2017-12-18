@@ -1,8 +1,8 @@
 ﻿Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-Set-Location C:\[$ClientFolder]
+Set-Location 'C:\Users\scmoore\Documents\GitHub\GBB-Sec\AciD\'
 . .\Params\config.ps1
-import-module "C:\Program Files (x86)\AWS Tools\PowerShell\AWSPowerShell\AWSPowerShell.psd1"
-Import-Module AzureRM
+
+$AZ_Enabled
 
 $Searcher = New-Object DirectoryServices.DirectorySearcher($SearchRoot, $Filter)  
 $Searcher.PageSize = 1000  
