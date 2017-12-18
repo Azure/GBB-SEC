@@ -1,8 +1,6 @@
-﻿Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-Set-Location 'C:\Users\scmoore\Documents\GitHub\GBB-Sec\AciD\'
-. .\Params\config.ps1
+﻿. .\Params\config.ps1
 
-$AZ_Enabled
+$AZ_Enabled #Enter $AZ_Enabled for Azure connection or $AWS_Enabled for AWS.
 
 $Searcher = New-Object DirectoryServices.DirectorySearcher($SearchRoot, $Filter)  
 $Searcher.PageSize = 1000  
