@@ -2,6 +2,7 @@
 Set-Location C:\[$ClientFolder]
 . .\Params\config.ps1
 import-module "C:\Program Files (x86)\AWS Tools\PowerShell\AWSPowerShell\AWSPowerShell.psd1"
+Import-Module AzureRM
 
 $Searcher = New-Object DirectoryServices.DirectorySearcher($SearchRoot, $Filter)  
 $Searcher.PageSize = 1000  
